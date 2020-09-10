@@ -1,0 +1,64 @@
+body {
+  background-color: teal;
+  text-align: center;
+
+}
+#container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+.grid {
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 600px;
+  background-color: white;
+  margin-left: 150px;
+}
+
+.grid div{
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+}
+
+.mini-grid{
+  margin-left: 50px;
+  width: 150px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mini-grid div {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+
+
+
+}
+
+#current-player{
+  color: darkmagenta;
+}
+
+#diagonal{
+  background-image: url('red_diagonal.png')
+}
+#orthogonal{
+  background-image: url('red_orthogonal.png')
+}
+#all{
+  background-image: url('red_all.png')
+}
+.player1{
+  background-image: url('red circle.png')
+}
+.player2{
+  background-image: url('yellow circle.png')
+}
