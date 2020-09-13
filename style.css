@@ -1,64 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+/*style links*/
+
+a:hover {
+    color: rgb(211, 211, 58)
+}
+a:active {
+    color: rgb(54, 201, 54)
+}
+
+/*format navigation menu*/
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display:flex;
+    
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 0;
+    
+}
+nav ul li a{
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+
+
+}
+nav ul li:last-child a{
+    margin-right: 0px;
+}
+
+/*Center text for all headings and image*/
+.text-center {
+    text-align: center
+}
+
+
+
+
+
+
+
+/*make page background light blue*/
 body {
-  background-color: teal;
-  text-align: center;
-
+    background-color: rgb(173, 220, 228);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-#container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+/*style section text*/
 
 
+p {
+    font-size: 12px;
+    margin-inline-start: 15px;
+    margin-inline-end: 15px;
 }
-.grid {
-
-  display: flex;
-  flex-wrap: wrap;
-  width: 600px;
-  height: 600px;
-  background-color: white;
-  margin-left: 150px;
+h2 {
+    font-size: 20px;
 }
-
-.grid div{
-  width: 100px;
-  height: 100px;
-  border: 1px solid;
+footer p {
+    font-size: 10px;
 }
 
-.mini-grid{
-  margin-left: 50px;
-  width: 150px;
-  height: 600px;
-  display: flex;
-  flex-wrap: wrap;
+/*format section dividers*/
+
+hr {
+    height: 5px;
+    background-color: white;
+    border: 2px solid black;
+    
+    
+  }
+
+
+img {
+    width: 100%;
+    
 }
-.mini-grid div {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  flex-wrap: wrap;
+ol, ul {
+    font-size: 12px;
+}
+
+@media all and (min-width: 600px) {
+    img {
+      width: 600px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    p, ol, ul {
+        font-size: 14px;
+    }
+    article {
+        width: 75%
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 30px;
+    }
+    header nav {
+        margin-top: 16px;
+    }
+    header h1 {
+        margin: 14px 0px;
+    }
+
+  }
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.item {
+    flex:1;
+    
+    
+}
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    padding:20px;
+    margin: 0;
+    font-size: 30px;
+}
+
+header {
+    background-color: black;
+    margin-bottom: 40px;
+    
+}
+
+form {
+    display: flex;
+    flex-direction:column;
+    padding: 20px;
+    
+}
+form input, textarea{
+    margin: 0 10px 10px 10px;
+}
+
+form label {
+    margin: 0 10px;
+}
+form button {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 0;
+    font-family: Tahoma;
+    font-size: 16px;
+    background: rgb(228, 67, 220);
+    color: #fff;
+    margin: 0 8px 10px 0;
+    
+}
+
+#splatter-div {
+    display: flex;
+    
+    justify-items: center;
+    align-items: center;
+    
+}
+#splatter-div img{
+    display: flex;
+    width: 40%;
+    margin-right: 20px;
+    
+}
 
 
 
-}
-
-#current-player{
-  color: darkmagenta;
-}
-
-#diagonal{
-  background-image: url('red_diagonal.png')
-}
-#orthogonal{
-  background-image: url('red_orthogonal.png')
-}
-#all{
-  background-image: url('red_all.png')
-}
-.player1{
-  background-image: url('red circle.png')
-}
-.player2{
-  background-image: url('yellow circle.png')
-}
