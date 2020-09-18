@@ -1,125 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scott Mittman's Portfolio Page</title>
-    
-    <link
-  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-  rel="stylesheet"
-  type="text/css"
-/>
-    <link href="style.css" rel="stylesheet" type="text/css" />  
-</head>
-<body>
-    <header>
-        <!--Page Title-->
-        <h1 class="text-center">Scott Mittman</h1>
-        
-        <!--Menu-->
-        <nav>
-            
-            <ul>
-                <li><a href="#intro">Intro</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                
-            </ul>
-        </nav>
-    </header>
-    <main>
-        
-        
-        <!--Portfolio Image-->
-        <div class="group">
-            <div id="img-div" class="text-center item">
-                <img src="portfolio-image.png" alt="A picture of Scott Mittman">
-            </div>
-    
-            <!--Intro section-->
-            <article id="intro" class="item">
-                <u>
-                    <h2 class="text-center">Intro</h2>
-                </u>
-                
-                <p>I am an aspiring software developer living in Decorah, Iowa. I'm currently enrolled in Thinkful's Software Engineering Flex program and am employed as an assistant cross country and track and field coach at Luther College.</p>
-                <p>I have experience solving practical and logistical problems as well as technical and more abstract problems.</p>
-                <hr>
-            </article>
-    
-            
-            <!--About me section-->
-            <article id="about-me" class="item">
-                <u>
-                    <h2 class="text-center">About Me</h2>
-                </u>
-                <p>I am excited to progress as a developer and work on a diverse set of projects.  The act of writing code--an abstract thing that accomplishes a practical, however mundane, task--is thrilling.</p>
-                <p>Some of my interests not necessarily related to coding include: math (MS Northern Arizona University 2017), distance running, gravel biking and reading books. If my interests have a unifying theme, it is exploration.  I love to explore places and ideas, both near and far, old and new. </p>
-                <p>I am eager to hear about any interesting projects. I've been on teams for most of my life and I am excited to work with other developers. If you want to connect or collaborate, please feel free to <a href="#contact">contact me</a>.</p>
-                <hr>
-            </article>
-            <!--links to js projects.-->
-            <article id="projects" class="item">
-                <u>
-                    <h2 class="text-center">Projects</h2>
-                </u>
-                
-                <h3>Splatter</h3>
-                <p>
-                    Splatter is a simple 2-player JavaScript game that I wrote.  The user plays against a computer player.  I decided to make this so that I could see how skilled of a player I was.  I learned some basics of game development and gained some experience with event handlers. You can play the game <a href="https://mittsc01.github.io/Splatter/" target="_blank">here</a>. You can find the github repo <a href="https://github.com/mittsc01/Splatter">here</a>.    
-                </p>
-                <div id="splatter-div" class="text-center">
-                    
-                    <img src="splatter2.png"/>
-                </div>
+  <html lang="en" dir="ltr">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+  <head>
+    <meta charset="utf-8">
+    <script src="app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css"></link>
+    <title>Splatter</title>
+    </head>
+    <div class="container-fluid">
+    <body>
+      <h1 class="text-center">SPLATTER</h1>
+      <h3 id="splatter-display" class="text-center">Splatter-mode: <span id="splatter-mode">N/A</span></h3>
+      <h3 id="result"></h3>
+      <div id="container">
+      <div class="grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="mini-grid">
+        <div id="orthogonal" class="blast"></div>
+        <div id="diagonal" class="blast"></div>
+        <div id="all" class="blast"></div>
+      </div>
 
-                <p>Here are links to a few other similar games:</p>
-                <ol>
-                    <li><a href="https://mittsc01.github.io/Corners/" target="_blank">Corners</a></li>
-                    <li><a href="https://mittsc01.github.io/Order-and-Chaos/" target="_blank">Order and Chaos</a></li>
-                </ol>
-                <hr>
-            </article>
-    
-            
-            <!--Contact section-->
-            <article id="contact" class="item">
-                <u>
-                    <h2 class="text-center">Contact</h2>
-                </u>
-
-                <form action="https://formspree.io/sm2884@nau.edu" method="POST">
-                    
-                    <label for="username">Name:</label>
-                    <input id="username" type="text" name="name"/>
-                    
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message"></textarea>
-                    
-                    <label for="email">Email:</label>
-                    <input id="email" type="text" name="email" />
-
-                    <button type="submit" class="text-center">Submit</button>
-
-                </form>
-                
-                <p>I would love to connect! Don't hesitate to contact me.</p>
-                <ul>
-                    <li><a href="https://github.com/mittsc01" target="_blank">Github</a></li>
-                    <li><a href="https://www.linkedin.com/in/scott-mittman-794a441b1/" target="_blank">LinkedIn</a></li>
-                    <li><a href="mailto:sm2884@nau.edu">Email</a></li>    
-                </ul>
-                <hr>
-            </article>
-    
-            
-            
-            
-        </div>
-        
-    </main>
-    <footer><p class="text-center">Page created by Scott Mittman</p></footer>
-</body>
-</html>
+      </div>
+    </body>
+  </div>
+    </html>
